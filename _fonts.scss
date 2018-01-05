@@ -1,0 +1,26 @@
+%u-bold { font-weight: bold; }
+%u-no-bold { font-weight: normal; }
+%u-italic { font-style: italic; }
+%u-no-italic { font-style: normal; }
+
+%u-underline { text-decoration: underline; }
+%u-strike { text-decoration: line-through; }
+%u-no-text-decoration { text-decoration: none; }
+
+%u-uppercase { text-transform: uppercase; }
+%u-lowercase { text-transform: lowercase; }
+%u-capitalize { text-transform: capitalize; }
+%u-no-text-transform { text-transform: none; }
+
+%u-text-left { text-align: left; }
+%u-text-right { text-align: right; }
+%u-text-center { text-align: center; }
+%u-text-justify { text-align: justify; }
+
+body {
+    @extend %u-strike;
+    @extend %u-text-center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
