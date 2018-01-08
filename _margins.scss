@@ -1,0 +1,13 @@
+$directions: top, right, bottom, left;
+$default-size: 30px;
+
+%u-no-margin { margin: 0; }
+
+@each $direction in $directions {
+    %u-no-margin-#{$direction} { margin-#{$direction}: 0; }
+    
+    %u-default-margin-#{$direction} { margin-#{$direction}: $default-size; }
+
+    %u-small-margin-#{$direction} { margin-#{$direction}: $default-size / 2; }
+    %u-large-margin-#{$direction} { margin-#{$direction}: $default-size * 2; }
+}

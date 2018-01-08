@@ -1,0 +1,13 @@
+$directions: top, right, bottom, left;
+$default-size: 30px;
+
+%u-no-padding { padding: 0; }
+
+@each $direction in $directions {
+    %u-no-padding-#{$direction} { padding-#{$direction}: 0; }
+    
+    %u-default-padding-#{$direction} { padding-#{$direction}: $default-size; }
+
+    %u-small-padding-#{$direction} { padding-#{$direction}: $default-size / 2; }
+    %u-large-padding-#{$direction} { padding-#{$direction}: $default-size * 2; }
+}
