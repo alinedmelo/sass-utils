@@ -1,0 +1,34 @@
+%u-display-flex { display: flex; }
+
+%u-flex-direction-row { flex-direction: row; }
+%u-flex-direction-column { flex-direction: column; }
+
+%u-flex-wrap { flex-wrap: wrap; }
+%u-flex-wrap-reverse { flex-wrap: wrap-reverse; }
+%u-flex-nowrap { flex-wrap: nowrap; }
+
+%u-justify-center { justify-content: center; }
+%u-justify-item-center { justify-items: center; }
+%u-justify-end { justify-content: flex-end; }
+%u-justify-item-end { justify-items: flex-end; }
+%u-justify-start { justify-content: flex-start; }
+%u-justify-item-start { justify-items: flex-start; }
+%u-justify-space-around { justify-content: space-around; }
+%u-justify-item-space-around { justify-items: flex-start; }
+%u-justify-space-between { justify-content: space-between; }
+%u-justify-item-space-between { justify-items: space-between; }
+
+%u-align-center { align-content: center; }
+%u-align-item-center { align-items: center; }
+%u-align-end { align-content: flex-end; }
+%u-align-item-end { align-items: flex-end; }
+%u-align-start { align-content: flex-start; }
+%u-align-item-start { align-items: flex-start; }
+%u-align-space-around { align-content: space-around; }
+%u-align-item-space-around { align-items: space-around; }
+%u-align-space-between { align-content: space-between; }
+%u-align-item-space-between { align-items: space-between; }
+%u-align-strech { align-content: stretch; }
+%u-align-item-strech { align-items: stretch; }
+
+%u-flex-center { @extend %u-justify-center, %u-align-center; }
