@@ -1,2 +1,8 @@
 body {
-  margin-top: 60px; }
+  margin: 0; }
+
+.card {
+  padding: 30px; }
+
+body {
+  background-color: #ccc; }

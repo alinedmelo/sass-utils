@@ -1,4 +1,9 @@
-@import '_fonts';
+@import 'fonts';
 @import 'margins';
 @import 'paddings';
 @import 'flexbox';
+@import 'card';
+
+body {
+    @extend %u-no-margin;
+}

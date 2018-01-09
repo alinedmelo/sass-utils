@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,IAAa;EAAE,MAAM,EAAE,CAAC;;ACCxB,KAAM;EACF,OAAO,EAJO,IAAI;;ACKtB,IAAK;EAED,UAAU,EAAE,GAAG",
+"sources": ["../_margins.scss","../_card.scss","../style.scss"],
+"names": [],
+"file": "style.css"
+}
