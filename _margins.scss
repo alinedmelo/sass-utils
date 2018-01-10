@@ -2,7 +2,7 @@ $directions: top, right, bottom, left;
 $default-size: 30px;
 
 %u-no-margin { margin: 0; }
-%u-default-margin { margin: $default-size; }
+%u-margin { margin: $default-size; }
 %u-small-margin { margin: $default-size / 2; }
 %u-large-margin { margin: $default-size * 2; }
 
@@ -12,3 +12,8 @@ $default-size: 30px;
     %u-small-margin-#{$direction} { margin-#{$direction}: $default-size / 2; }
     %u-large-margin-#{$direction} { margin-#{$direction}: $default-size * 2; }
 }
+
+.u-margin { @extend %u-margin; }
+.u-no-margin { @extend %u-no-margin; }
+.u-small-margin { @extend %u-small-margin; }
+.u-large-margin { @extend %u-large-margin; }

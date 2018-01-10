@@ -2,26 +2,27 @@ $directions: top, right, bottom, left;
 $default-padding: 30px;
 $default-background: #f4f4f4;
 
-.card {
+.c-card {
     @extend %u-display-flex, %u-flex-center, %u-flex-direction-column, %u-align-item-center, %u-default-border, %u-small-margin;
     padding: $default-padding;
-    .card__meta {
-        @extend %u-small-margin, %u-text-center;
+    width: 300px;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+    .c-card__meta {
+        @extend %u-text-center, %u-small-margin;
     }
-    .card__image {
+    .c-card__image {
         width: 150px;
         height: 150px;
         padding: 10px;
-        @extend %u-full-border-radius, %u-default-border;
+        @extend %u-full-border-radius, %u-default-border, %u-small-margin;
     }
-    .card__name {
+    .c-card__name {
         @extend %u-bold, %u-uppercase, %u-no-margin;
-        font-family: 'Molengo', sans-serif;
+        font-family: $title-font-family;
         font-size: 1.5em;
         line-height: 1em;
     }
-    .card__email {
-        @extend %u-italic;
+    .c-card__email {
         font-size: .8em;
         color: #8b8b8b;
     }

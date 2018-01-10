@@ -1,66 +1,69 @@
+/* GLOBALS */
 @import url("https://fonts.googleapis.com/css?family=Molengo|Oleo+Script|Raleway");
-.card .card__name {
+.c-card .c-card__name {
   font-weight: bold; }
 
-.card .card__email {
-  font-style: italic; }
-
-.card .card__name {
+.c-card .c-card__name {
   text-transform: uppercase; }
 
-.card .card__meta {
+.c-card .c-card__meta {
   text-align: center; }
 
-.card .card__name {
+.u-no-margin, .c-card .c-card__name {
   margin: 0; }
 
-.card, .card .card__meta {
+.u-margin {
+  margin: 30px; }
+
+.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-card__button {
   margin: 15px; }
 
-body {
+.u-large-margin, .container {
   margin: 60px; }
 
-.card {
+.c-card {
   display: flex; }
 
-.card {
+.c-card {
   flex-direction: column; }
 
-.card {
+.c-card {
   justify-content: center; }
 
-.card {
+.c-card {
   align-content: center; }
 
-.card {
+.c-card {
   align-items: center; }
 
-.card {
-  padding: 30px; }
-  .card .card__image {
+.c-card {
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1); }
+  .c-card .c-card__image {
     width: 150px;
     height: 150px;
     padding: 10px; }
-  .card .card__name {
-    font-family: 'Molengo', sans-serif;
+  .c-card .c-card__name {
+    font-family: "Molengo", sans-serif;
     font-size: 1.5em;
     line-height: 1em; }
-  .card .card__email {
+  .c-card .c-card__email {
     font-size: .8em;
     color: #8b8b8b; }
 
-.card, .card .card__image {
+.c-card, .c-card .c-card__image {
   border-radius: 6.25px; }
 
-.card .card__image {
+.c-card .c-card__image {
   border-radius: 100px; }
 
-.card, .card .card__image {
+.c-card, .c-card .c-card__image {
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
-.card__button {
+.c-card__button {
   padding: 10px 20px;
-  width: 25%;
+  width: calc(100% / 2);
   font-weight: bold;
   text-align: center;
   color: #fff;
@@ -70,10 +73,13 @@ body {
   transition: all .5s ease-out;
   cursor: pointer; }
 
-.card__button--hover:hover {
+.c-card__button.is-hover:hover {
   background: #0b4972;
   transition: all .3s ease-in; }
 
 /* GLOBAL SCOPE */
-body {
+.container {
+  display: inline-flex;
   font-family: "Raleway", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
