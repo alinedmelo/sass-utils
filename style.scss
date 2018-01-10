@@ -3,7 +3,8 @@
 @import 'paddings';
 @import 'flexbox';
 @import 'card';
+@import 'borders';
 
 body {
-    @extend %u-no-margin;
+    @extend %u-large-margin;
 }

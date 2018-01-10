@@ -1,0 +1,19 @@
+$default-border-size: 1px;
+$default-border-radius: 20px;
+$default-border-color: rgba(0, 0, 0, .1);
+$default-border-style: solid;
+
+%u-border-width { border-width: $default-border-size; }
+%u-border-color-default { border-color: $default-border-color; }
+
+%u-border-radius { border-radius: $default-border-radius; }
+%u-mini-border-radius { border-radius: $default-border-radius / 4; }
+%u-small-border-radius { border-radius: $default-border-radius / 2; }
+%u-large-border-radius { border-radius: $default-border-radius * 2; }
+%u-full-border-radius { border-radius: $default-border-radius * 3; }
+
+
+%u-default-border { border: $default-border-size $default-border-style $default-border-color; }
+
+
+    

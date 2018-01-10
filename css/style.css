@@ -1,8 +1,20 @@
 body {
-  margin: 0; }
+  margin: 60px; }
+
+.card {
+  display: flex; }
+
+.card {
+  justify-content: center; }
+
+.card {
+  align-content: center; }
 
 .card {
   padding: 30px; }
 
-body {
-  background-color: #ccc; }
+.card {
+  border-radius: 5px; }
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
