@@ -3,5 +3,26 @@ $default-padding: 30px;
 $default-background: #f4f4f4;
 
 .card {
+    @extend %u-display-flex, %u-flex-center, %u-flex-direction-column, %u-align-item-center, %u-default-border, %u-small-margin;
     padding: $default-padding;
+    .card__meta {
+        @extend %u-small-margin, %u-text-center;
+    }
+    .card__image {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        @extend %u-full-border-radius, %u-default-border;
+    }
+    .card__name {
+        @extend %u-bold, %u-uppercase, %u-no-margin;
+        font-family: 'Molengo', sans-serif;
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+    .card__email {
+        @extend %u-italic;
+        font-size: .8em;
+        color: #8b8b8b;
+    }
 }

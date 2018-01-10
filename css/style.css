@@ -1,8 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Molengo|Oleo+Script|Raleway");
+.card .card__name {
+  font-weight: bold; }
+
+.card .card__email {
+  font-style: italic; }
+
+.card .card__name {
+  text-transform: uppercase; }
+
+.card .card__meta {
+  text-align: center; }
+
+.card .card__name {
+  margin: 0; }
+
+.card, .card .card__meta {
+  margin: 15px; }
+
 body {
   margin: 60px; }
 
 .card {
   display: flex; }
+
+.card {
+  flex-direction: column; }
 
 .card {
   justify-content: center; }
@@ -11,10 +33,33 @@ body {
   align-content: center; }
 
 .card {
+  align-items: center; }
+
+.card {
   padding: 30px; }
+  .card .card__image {
+    width: 150px;
+    height: 150px;
+    padding: 10px; }
+  .card .card__name {
+    font-family: 'Molengo', sans-serif;
+    font-size: 1.5em;
+    line-height: 1em; }
+  .card .card__email {
+    font-size: .8em;
+    color: #8b8b8b; }
 
-.card {
-  border-radius: 5px; }
+.card, .card .card__image {
+  border-radius: 6.25px; }
 
-.card {
+.card .card__image {
+  border-radius: 100px; }
+
+.card, .card .card__image {
   border: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* GLOBAL SCOPE */
+body {
+  font-family: "Raleway", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
