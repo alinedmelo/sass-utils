@@ -1,8 +1,11 @@
 /* GLOBALS */
 
 $default-color: #333;
-$primary-color: #064251;
-$secondary-color: #00b7b5;
+$primary-color: #00b7b5;
+$secondary-color: #064251;
+$disabled-color: #ccc;
 
 $font-family: 'Raleway', sans-serif;
 $title-font-family: 'Molengo', sans-serif;
+
+$darken-color: darken(#800, 20%);

@@ -15,7 +15,7 @@
 .u-margin {
   margin: 30px; }
 
-.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-card__button {
+.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-button {
   margin: 15px; }
 
 .u-large-margin, .container {
@@ -61,21 +61,30 @@
 .c-card, .c-card .c-card__image {
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
-.c-card__button {
-  padding: 10px 20px;
+.c-button {
   width: calc(100% / 2);
+  padding: 10px 20px;
   font-weight: bold;
   text-align: center;
   color: #fff;
   border: none;
   border-radius: 50px;
-  background: #0e5e94;
-  transition: all .5s ease-out;
-  cursor: pointer; }
+  background: #00b7b5;
+  transition: all .5s ease-out; }
+  .c-button:focus {
+    outline: 0;
+    transition: all 0s ease-in; }
+  .c-button:active {
+    transition: all 0s ease-in;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2); }
+  .c-button:not(:disabled) {
+    cursor: pointer; }
+  .c-button:disabled {
+    background: #ccc; }
 
-.c-card__button.is-hover:hover {
-  background: #0b4972;
-  transition: all .3s ease-in; }
+.c-button:hover:not(:disabled) {
+  background: #ccc;
+  transition: background .3s ease-in; }
 
 /* GLOBAL SCOPE */
 .container {
