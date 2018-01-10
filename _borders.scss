@@ -1,7 +1,7 @@
 $default-border-size: 1px;
-$default-border-radius: 20px;
-$default-border-color: rgba(0, 0, 0, .1);
 $default-border-style: solid;
+$default-border-color: rgba(0, 0, 0, .1);
+$default-border-radius: 25px;
 
 %u-border-width { border-width: $default-border-size; }
 %u-border-color-default { border-color: $default-border-color; }
@@ -10,10 +10,9 @@ $default-border-style: solid;
 %u-mini-border-radius { border-radius: $default-border-radius / 4; }
 %u-small-border-radius { border-radius: $default-border-radius / 2; }
 %u-large-border-radius { border-radius: $default-border-radius * 2; }
-%u-full-border-radius { border-radius: $default-border-radius * 3; }
+%u-full-border-radius { border-radius: $default-border-radius * 4; }
 
 
-%u-default-border { border: $default-border-size $default-border-style $default-border-color; }
-
-
-    
+%u-default-border { 
+    border: $default-border-size $default-border-style $default-border-color; 
+    @extend %u-mini-border-radius; }
