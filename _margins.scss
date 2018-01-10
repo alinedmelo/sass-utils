@@ -3,6 +3,8 @@ $default-size: 30px;
 
 %u-no-margin { margin: 0; }
 %u-default-margin { margin: $default-size; }
+%u-small-margin { margin: $default-size / 2; }
+%u-large-margin { margin: $default-size * 2; }
 
 @each $direction in $directions {
     %u-no-margin-#{$direction} { margin-#{$direction}: 0; }
