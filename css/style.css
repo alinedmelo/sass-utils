@@ -58,6 +58,22 @@ body {
 .card, .card .card__image {
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
+.card .card__button, .card__button {
+  padding: 10px 20px;
+  width: 25%;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  background: #0e5e94;
+  transition: all .5s ease-out;
+  cursor: pointer; }
+
+.card__button:hover {
+  background: #0b4972;
+  transition: all .3s ease-in; }
+
 /* GLOBAL SCOPE */
 body {
   font-family: "Raleway", sans-serif; }

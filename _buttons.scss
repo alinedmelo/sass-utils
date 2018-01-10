@@ -1,0 +1,22 @@
+%u-button {
+    padding: 10px 20px;
+    width: 25%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: rgb(14, 94, 148);
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+@mixin button-color ($hover) {
+    &:hover {
+        background: $hover;
+        transition: all .3s ease-in;
+    }
+}
+.card__button {
+    @extend %u-button;
+    @include button-color(rgb(11, 73, 114));
+}

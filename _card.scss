@@ -25,4 +25,7 @@ $default-background: #f4f4f4;
         font-size: .8em;
         color: #8b8b8b;
     }
+    .card__button {
+        @extend %u-button;
+    }
 }
