@@ -11,9 +11,11 @@
     cursor: pointer;
 }
 @mixin button-color ($hover) {
-    &:hover {
-        background: $hover;
-        transition: all .3s ease-in;
+    &--hover {
+        &:hover {
+            background: $hover;
+            transition: all .3s ease-in;
+        }
     }
 }
 .card__button {
