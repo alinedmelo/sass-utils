@@ -31,4 +31,5 @@
 %u-align-strech { align-content: stretch; }
 %u-align-item-strech { align-items: stretch; }
 
+%u-flex-center { @extend %u-justify-center, %u-align-center; }
 .u-flex-center { @extend %u-justify-center, %u-align-center; }
