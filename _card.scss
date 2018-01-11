@@ -1,6 +1,4 @@
-$directions: top, right, bottom, left;
 $default-padding: 30px;
-$default-background: #f4f4f4;
 
 .c-card {
     @extend %u-display-flex, %u-flex-center, %u-flex-direction-column, %u-align-item-center, %u-default-border, %u-small-margin;
