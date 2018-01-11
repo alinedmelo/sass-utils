@@ -1,8 +1,8 @@
 $directions: top, right, bottom, left;
 $default-size: 30px;
 
+%u-padding { padding: $default-size; }
 %u-no-padding { padding: 0; }
-%u-default-padding { padding: $default-size; }
 %u-small-padding { padding: $default-size / 2; }
 %u-large-padding { padding: $default-size * 2; }
 
@@ -12,3 +12,8 @@ $default-size: 30px;
     %u-small-padding-#{$direction} { padding-#{$direction}: $default-size / 2; }
     %u-large-padding-#{$direction} { padding-#{$direction}: $default-size * 2; }
 }
+
+.u-padding { @extend %u-padding; }
+.u-no-padding { @extend %u-no-padding; }
+.u-small-padding { @extend %u-small-padding; }
+.u-large-padding { @extend %u-large-padding; }
