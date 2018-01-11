@@ -16,3 +16,5 @@ $default-border-radius: 25px;
 %u-default-border { 
     border: $default-border-size $default-border-style $default-border-color; 
     @extend %u-mini-border-radius; }
+
+.u-default-border { @extend %u-default-border; }    
