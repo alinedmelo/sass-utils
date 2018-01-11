@@ -1,22 +1,20 @@
 %c-button {
+    @extend %u-small-margin, %u-large-border-radius;
     width: calc(100% / 2);
-    @extend %u-small-margin;
     padding: 10px 20px;
     font-weight: bold;
     text-align: center;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    background: $primary-color;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    background: $transparent-color;
     transition: all .5s ease-out;
     &:focus {
         outline: 0;
         transition: all 0s ease-in;
     }
-
     &:active {
         transition: all 0s ease-in;
-        box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        transform: translateY(1px);
     }
     &:not(:disabled) {
         cursor: pointer;
@@ -25,13 +23,27 @@
         background: $disabled-color;
     }
 }
+// Darken color on hover, except disabled element
 @mixin hover-color ($color) {
     &:hover:not(:disabled) {
-        background: $color;
+        background: darken($color, 10%);
         transition: background .3s ease-in;
     }
 }
+// Class for the button component
 .c-button {
     @extend %c-button;
-    @include hover-color(#ccc);
+    &:hover:not(:disabled) {
+        background: $primary-color;
+        color: #fff;
+    }
+    &-secondary {
+        @extend %c-button;
+        color: #fff;
+        background: $primary-color;
+        &:hover {
+            background: darken($primary-color, 5%);
+            border-color: darken($primary-color, 5%);
+        }
+    }
 }
