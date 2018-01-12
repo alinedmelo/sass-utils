@@ -1,0 +1,9 @@
+// slightly lighter a color
+@function lighter($color, $percentage) {
+    @return mix($color, white, $percentage);
+}
+
+// slightly darker a color
+@function darker($color, $percentage) {
+    @return mix($color, black, $percentage);
+}

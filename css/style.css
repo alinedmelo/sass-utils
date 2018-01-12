@@ -17,14 +17,17 @@
 .u-margin {
   margin: 30px; }
 
-.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-button, .c-button-primary {
+.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-card .c-card__buttons {
   margin: 15px; }
 
 .u-large-margin, .container {
   margin: 60px; }
 
-.u-margin-remove-top {
+.u-margin-remove-top, .c-card .c-card__image {
   margin-top: 0; }
+
+.c-card .c-card__buttons button:not(:first-child) {
+  margin-left: 15px; }
 
 .u-padding {
   padding: 30px; }
@@ -38,16 +41,16 @@
 .u-large-padding {
   padding: 60px; }
 
-.u-flex-center, .c-card {
+.u-flex-center, .c-card, .c-card .c-card__buttons {
   display: flex; }
 
 .c-card {
   flex-direction: column; }
 
-.u-flex-center, .c-card {
+.u-flex-center, .c-card, .c-card .c-card__buttons {
   justify-content: center; }
 
-.u-flex-center, .c-card {
+.u-flex-center, .c-card, .c-card .c-card__buttons {
   align-content: center; }
 
 .c-card {
@@ -56,7 +59,7 @@
 .u-default-border, .c-card, .c-card .c-card__image {
   border-radius: 6.25px; }
 
-.c-button, .c-button-primary {
+.c-button, .c-button-primary, .c-button-small {
   border-radius: 50px; }
 
 .c-card .c-card__image {
@@ -81,8 +84,10 @@
   .c-card .c-card__email {
     font-size: .8em;
     color: #8b8b8b; }
+  .c-card .c-card__buttons {
+    width: 100%; }
 
-.c-button, .c-button-primary {
+.c-button, .c-button-primary, .c-button-small {
   width: calc(100% / 2);
   padding: 10px 20px;
   font-weight: bold;
@@ -91,15 +96,15 @@
   border: 2px solid #00b7b5;
   background: transparent;
   transition: all .5s ease-out; }
-  .c-button:focus, .c-button-primary:focus {
+  .c-button:focus, .c-button-primary:focus, .c-button-small:focus {
     outline: 0;
     transition: all 0s ease-in; }
-  .c-button:active, .c-button-primary:active {
+  .c-button:active, .c-button-primary:active, .c-button-small:active {
     transition: all 0s ease-in;
     transform: translateY(1px); }
-  .c-button:not(:disabled), .c-button-primary:not(:disabled) {
+  .c-button:not(:disabled), .c-button-primary:not(:disabled), .c-button-small:not(:disabled) {
     cursor: pointer; }
-  .c-button:disabled, .c-button-primary:disabled {
+  .c-button:disabled, .c-button-primary:disabled, .c-button-small:disabled {
     background: #ccc; }
 
 .c-button:hover:not(:disabled) {
@@ -111,6 +116,10 @@
   .c-button-primary:hover {
     background: #009291;
     border-color: #009291; }
+.c-button-small {
+  padding: 5px 10px;
+  width: calc(100% / 3);
+  font-size: 70%; }
 
 /* GLOBAL SCOPE */
 .container {

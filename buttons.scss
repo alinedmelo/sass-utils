@@ -1,5 +1,5 @@
 %c-button {
-    @extend %u-small-margin, %u-large-border-radius;
+    @extend %u-large-border-radius;
     width: calc(100% / 2);
     padding: 10px 20px;
     font-weight: bold;
@@ -38,5 +38,11 @@
             background: darker($primary-color, 80%);
             border-color: darker($primary-color, 80%);
         }
+    }
+    &-small {
+        @extend %c-button;
+        padding: 5px 10px;
+        width: calc(100% / 3);
+        font-size: 70%;
     }
 }

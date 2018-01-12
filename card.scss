@@ -1,7 +1,5 @@
-$default-padding: 30px;
-
 .c-card {
-    @extend %u-display-flex, %u-flex-center, %u-flex-direction-column, %u-align-item-center, %u-default-border, %u-small-margin;
+    @extend %u-flex-center, %u-flex-direction-column, %u-align-item-center, %u-default-border, %u-small-margin;
     padding: $default-padding;
     width: 300px;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
@@ -12,7 +10,7 @@ $default-padding: 30px;
         width: 150px;
         height: 150px;
         padding: 10px;
-        @extend %u-full-border-radius, %u-default-border, %u-small-margin;
+        @extend %u-full-border-radius, %u-default-border, %u-small-margin, %u-no-margin-top;
     }
     .c-card__name {
         @extend %u-bold, %u-uppercase, %u-no-margin;
@@ -23,5 +21,14 @@ $default-padding: 30px;
     .c-card__email {
         font-size: .8em;
         color: #8b8b8b;
+    }
+    .c-card__buttons {
+        @extend %u-flex-center, %u-small-margin;
+        width: 100%;
+        button {
+            &:not(:first-child) {
+                @extend %u-small-margin-left;
+            }
+        }
     }
 }

@@ -1,16 +1,16 @@
 $directions: top, right, bottom, left;
-$default-size: 30px;
+$default-padding: 30px;
 
-%u-padding { padding: $default-size; }
+%u-padding { padding: $default-padding; }
 %u-no-padding { padding: 0; }
-%u-small-padding { padding: $default-size / 2; }
-%u-large-padding { padding: $default-size * 2; }
+%u-small-padding { padding: $default-padding / 2; }
+%u-large-padding { padding: $default-padding * 2; }
 
 @each $direction in $directions {
     %u-no-padding-#{$direction} { padding-#{$direction}: 0; }
 
-    %u-small-padding-#{$direction} { padding-#{$direction}: $default-size / 2; }
-    %u-large-padding-#{$direction} { padding-#{$direction}: $default-size * 2; }
+    %u-small-padding-#{$direction} { padding-#{$direction}: $default-padding / 2; }
+    %u-large-padding-#{$direction} { padding-#{$direction}: $default-padding * 2; }
 }
 
 .u-padding { @extend %u-padding; }
