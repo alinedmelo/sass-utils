@@ -17,3 +17,5 @@ $default-size: 30px;
 .u-no-margin { @extend %u-no-margin; }
 .u-small-margin { @extend %u-small-margin; }
 .u-large-margin { @extend %u-large-margin; }
+
+.u-margin-remove-top { @extend %u-no-margin-top; }

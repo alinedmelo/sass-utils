@@ -1,4 +1,6 @@
+/* GLOBAL */
 /* GLOBALS */
+/* UTILS */
 @import url("https://fonts.googleapis.com/css?family=Molengo|Oleo+Script|Raleway");
 .c-card .c-card__name {
   font-weight: bold; }
@@ -20,6 +22,9 @@
 
 .u-large-margin, .container {
   margin: 60px; }
+
+.u-margin-remove-top {
+  margin-top: 0; }
 
 .u-padding {
   padding: 30px; }
@@ -48,6 +53,19 @@
 .c-card {
   align-items: center; }
 
+.u-default-border, .c-card, .c-card .c-card__image {
+  border-radius: 6.25px; }
+
+.c-button, .c-button-secondary {
+  border-radius: 50px; }
+
+.c-card .c-card__image {
+  border-radius: 100px; }
+
+.u-default-border, .c-card, .c-card .c-card__image {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* COMPONENTS */
 .c-card {
   padding: 30px;
   width: 300px;
@@ -63,18 +81,6 @@
   .c-card .c-card__email {
     font-size: .8em;
     color: #8b8b8b; }
-
-.c-card, .c-card .c-card__image {
-  border-radius: 6.25px; }
-
-.c-button, .c-button-secondary {
-  border-radius: 50px; }
-
-.c-card .c-card__image {
-  border-radius: 100px; }
-
-.c-card, .c-card .c-card__image {
-  border: 1px solid rgba(0, 0, 0, 0.1); }
 
 .c-button, .c-button-secondary {
   width: calc(100% / 2);
