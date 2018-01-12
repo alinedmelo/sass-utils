@@ -1,5 +1,7 @@
 /* GLOBAL */
 /* GLOBALS */
+/* theme colors */
+/* theme fonts */
 /* UTILS */
 @import url("https://fonts.googleapis.com/css?family=Molengo|Oleo+Script|Raleway");
 .c-card .c-card__name {
@@ -105,7 +107,7 @@
   .c-button:not(:disabled), .c-button-primary:not(:disabled), .c-button-small:not(:disabled) {
     cursor: pointer; }
   .c-button:disabled, .c-button-primary:disabled, .c-button-small:disabled {
-    background: #ccc; }
+    background: #cccccc; }
 
 .c-button:hover:not(:disabled) {
   border-color: #00807f;
