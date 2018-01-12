@@ -23,27 +23,20 @@
         background: $disabled-color;
     }
 }
-// Darken color on hover, except disabled element
-@mixin hover-color ($color) {
-    &:hover:not(:disabled) {
-        background: darken($color, 10%);
-        transition: background .3s ease-in;
-    }
-}
 // Class for the button component
 .c-button {
     @extend %c-button;
     &:hover:not(:disabled) {
-        background: $primary-color;
-        color: #fff;
+        border-color: darker($primary-color, 70%);
+        color: darker($primary-color, 70%);
     }
-    &-secondary {
+    &-primary {
         @extend %c-button;
         color: #fff;
         background: $primary-color;
         &:hover {
-            background: darken($primary-color, 5%);
-            border-color: darken($primary-color, 5%);
+            background: darker($primary-color, 80%);
+            border-color: darker($primary-color, 80%);
         }
     }
 }

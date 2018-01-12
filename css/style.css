@@ -17,7 +17,7 @@
 .u-margin {
   margin: 30px; }
 
-.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-button, .c-button-secondary {
+.u-small-margin, .c-card, .c-card .c-card__meta, .c-card .c-card__image, .c-button, .c-button-primary {
   margin: 15px; }
 
 .u-large-margin, .container {
@@ -38,16 +38,16 @@
 .u-large-padding {
   padding: 60px; }
 
-.c-card {
+.u-flex-center, .c-card {
   display: flex; }
 
 .c-card {
   flex-direction: column; }
 
-.c-card, .u-flex-center {
+.u-flex-center, .c-card {
   justify-content: center; }
 
-.c-card, .u-flex-center {
+.u-flex-center, .c-card {
   align-content: center; }
 
 .c-card {
@@ -56,7 +56,7 @@
 .u-default-border, .c-card, .c-card .c-card__image {
   border-radius: 6.25px; }
 
-.c-button, .c-button-secondary {
+.c-button, .c-button-primary {
   border-radius: 50px; }
 
 .c-card .c-card__image {
@@ -82,7 +82,7 @@
     font-size: .8em;
     color: #8b8b8b; }
 
-.c-button, .c-button-secondary {
+.c-button, .c-button-primary {
   width: calc(100% / 2);
   padding: 10px 20px;
   font-weight: bold;
@@ -91,26 +91,26 @@
   border: 2px solid #00b7b5;
   background: transparent;
   transition: all .5s ease-out; }
-  .c-button:focus, .c-button-secondary:focus {
+  .c-button:focus, .c-button-primary:focus {
     outline: 0;
     transition: all 0s ease-in; }
-  .c-button:active, .c-button-secondary:active {
+  .c-button:active, .c-button-primary:active {
     transition: all 0s ease-in;
     transform: translateY(1px); }
-  .c-button:not(:disabled), .c-button-secondary:not(:disabled) {
+  .c-button:not(:disabled), .c-button-primary:not(:disabled) {
     cursor: pointer; }
-  .c-button:disabled, .c-button-secondary:disabled {
+  .c-button:disabled, .c-button-primary:disabled {
     background: #ccc; }
 
 .c-button:hover:not(:disabled) {
-  background: #00b7b5;
-  color: #fff; }
-.c-button-secondary {
+  border-color: #00807f;
+  color: #00807f; }
+.c-button-primary {
   color: #fff;
   background: #00b7b5; }
-  .c-button-secondary:hover {
-    background: #009e9c;
-    border-color: #009e9c; }
+  .c-button-primary:hover {
+    background: #009291;
+    border-color: #009291; }
 
 /* GLOBAL SCOPE */
 .container {
