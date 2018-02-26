@@ -1,19 +1,28 @@
 $directions: top, right, bottom, left;
-$default-padding: 30px;
+$padding: 6rem;
 
-%u-padding { padding: $default-padding; }
-%u-no-padding { padding: 0; }
-%u-small-padding { padding: $default-padding / 2; }
-%u-large-padding { padding: $default-padding * 2; }
+// Padding Placeholders //
+%padding        { padding: $padding; }
+%no-padding     { padding: 0; }
+%padding-small  { padding: $padding / 2; }
+%padding-large  { padding: $padding * 2; }
 
 @each $direction in $directions {
-    %u-no-padding-#{$direction} { padding-#{$direction}: 0; }
-
-    %u-small-padding-#{$direction} { padding-#{$direction}: $default-padding / 2; }
-    %u-large-padding-#{$direction} { padding-#{$direction}: $default-padding * 2; }
+    
+    %padding-small-#{$direction}   { padding-#{$direction}: $padding / 2; }
+    %padding-large-#{$direction}    { padding-#{$direction}: $padding * 2; }
+    %no-padding-#{$direction}       { padding-#{$direction}: 0; }
 }
 
-.u-padding { @extend %u-padding; }
-.u-no-padding { @extend %u-no-padding; }
-.u-small-padding { @extend %u-small-padding; }
-.u-large-padding { @extend %u-large-padding; }
+// Helpers //
+._padding               { @extend %padding; }
+._padding-small         { @extend %padding-small; }
+._padding-large         { @extend %padding-large; }
+._no-padding            { @extend %no-padding; }
+
+._padding-small-top     { @extend %padding-small-top; }
+._padding-small-bottom  { @extend %padding-small-bottom; }
+
+._padding-remove        { @extend %no-padding; }
+._padding-remove-top    { @extend %no-padding-top; }
+._padding-remove-bottom { @extend %no-padding-bottom; }
