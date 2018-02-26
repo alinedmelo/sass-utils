@@ -1,21 +1,28 @@
+$margin: 6rem;
 $directions: top, right, bottom, left;
-$default-size: 30px;
 
-%u-no-margin { margin: 0; }
-%u-margin { margin: $default-size; }
-%u-small-margin { margin: $default-size / 2; }
-%u-large-margin { margin: $default-size * 2; }
+// Margin Placeholders //
+%margin         { margin: $margin; }
+%margin-small   { margin: $margin / 2; }
+%margin-large   { margin: $margin * 2; }
+%no-margin      { margin: 0; }
 
 @each $direction in $directions {
-    %u-no-margin-#{$direction} { margin-#{$direction}: 0; }
-
-    %u-small-margin-#{$direction} { margin-#{$direction}: $default-size / 2; }
-    %u-large-margin-#{$direction} { margin-#{$direction}: $default-size * 2; }
+    
+    %margin-small-#{$direction}     { margin-#{$direction}: $margin / 2; }
+    %margin-large-#{$direction}     { margin-#{$direction}: $margin * 2; }
+    %no-margin-#{$direction}        { margin-#{$direction}: 0; }
 }
 
-.u-margin { @extend %u-margin; }
-.u-no-margin { @extend %u-no-margin; }
-.u-small-margin { @extend %u-small-margin; }
-.u-large-margin { @extend %u-large-margin; }
+// Helpers //
+._margin        { @extend %margin; }
+._no-margin     { @extend %no-margin; }
+._margin-small  { @extend %margin-small; }
+._margin-large  { @extend %margin-large; }
 
-.u-margin-remove-top { @extend %u-no-margin-top; }
+._margin-small-top     { @extend %margin-small-top; }
+._margin-small-bottom  { @extend %margin-small-bottom; }
+
+._margin-remove         { @extend %no-margin; }
+._margin-remove-top     { @extend %no-margin-top; }
+._margin-remove-bottom  { @extend %no-margin-bottom; }
